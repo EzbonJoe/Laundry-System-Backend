@@ -49,10 +49,10 @@ app.use(helmet());
 // CORS — allow requests from the frontend client
 app.use(cors({
   origin: [
-    // 'http://localhost:5173',
-    'https://laundry-management-frontend.vercel.app',
+    'http://localhost:5173',
+    'https://laundry-system-frontend-sooty.vercel.app',
   ],
-  credentials: true, // allow cookies
+  credentials: true,
 }));
 
 // Rate limiting — protect auth routes from brute force
